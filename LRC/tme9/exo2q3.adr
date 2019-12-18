@@ -1,0 +1,12 @@
+s 120.0 280.0 3 c p1 ne
+s 120.0 50.0 1 c {p1 p2} ne
+s 120.0 160.0 2 c p0 e
+s 30.0 120.0 0 c {p1 p3} n
+e 2 0 t2 s
+e 2 3 t1 n
+e 1 0 t3 e
+e 1 2 t0 e
+e 0 1 t4 nw
+h exo2q3
+
+

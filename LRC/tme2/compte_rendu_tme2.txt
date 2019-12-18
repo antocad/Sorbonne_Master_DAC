@@ -1,0 +1,48 @@
+ORLUC Thomas 3670355
+CADIOU Antoine 3670631 
+
+Exercice 1
+[trace]  ?- r(f(f(a)),b).
+   Call: (7) r(f(f(a)), b) ? creep
+   Call: (8) p(f(a), b) ? creep
+   Call: (9) r(a, b) ? creep
+   Exit: (9) r(a, b) ? creep
+   Exit: (8) p(f(a), b) ? creep
+   Exit: (7) r(f(f(a)), b) ? creep
+true.
+
+
+[trace]  ?- p(f(a),b).
+   Call: (7) p(f(a), b) ? creep
+   Call: (8) r(a, b) ? creep
+   Exit: (8) r(a, b) ? creep
+   Exit: (7) p(f(a), b) ? creep
+true.
+
+
+Il empile les étapes, jusqu'a trouver une clause existante, il dépile et remonte le resultat vrai a chaque étape.
+
+Exercice 2
+
+[trace]  ?- q(X,b).
+   Call: (7) q(_G2809, b) ? creep
+   Exit: (7) q(b, b) ? creep
+X = b .
+
+[trace]  ?- q(b,X).
+   Call: (7) q(b, _G2810) ? creep
+   Exit: (7) q(b, b) ? creep
+X = b .
+
+A cause de la clause q(X,X), si on ne spécifie pas deux variables, le programme va forcément arriver a X=b (ou si q(X,Y), X=Y)
+
+Exercice 3
+e(X)
+En appuyant sur ; prolog donne bien les deux résultats, Pascal et Zoé.
+
+Exercice 4
+Pour les appels récursifs, on s'apperçoit qu'il existe 2 clauses qui peuvent fonctionner (en plus du cas d'arrêt):
+ancetre(X,Y) :- ancetre(X,Z), parent(Z,Y).
+ancetre(X,Y) :- parent(X,Z), ancetre(Z,Y).
+
+La trace est différente, et la deuxième semble plus optimisée.

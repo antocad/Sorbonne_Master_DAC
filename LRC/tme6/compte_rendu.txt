@@ -1,0 +1,37 @@
+Cadiou Antoine 3670631
+Orluc Thomas 3670355
+
+
+Exercice 1 
+
+1- valide car la négation est insatisfiable
+2- insatisfiable
+3- juste satisfiable, (la négation l'est aussi)-
+
+
+Exercice 2
+
+not equiv not nec P nec not nec P
+Cette formule n'est pas satisfiable, donc la formule de base est valide
+En S4, Lotrec nous dit que not la formule est satisfiable, et que donc la formule de base n'est pas valide
+
+
+Exercice 3
+
+Les deux formules de l'énoncé fonctionnent bien dans ce modèle de Kripke.
+F1 = isItTrue or nec A PA nec A not PA
+F2 = isItTrue and not nec C PC not nec C not PC
+
+B peut savoir si elle a un papillon sur la tête, seulement si le papillon est sur C, ce qu'on peut voir car la formule n'est vraie que dans le monde ou PC est vrai
+
+C ne sait jamais si elle a un papillon, donc oui, A le sait toujours
+
+B ne sait que si le papillon est sur C, et A peut voir C, donc A sait que B sait. 
+
+
+Exercice 4
+
+
+w1 - w2 avec 1,2
+w1 - w3 avec 3
+w2 - w4 avec 3

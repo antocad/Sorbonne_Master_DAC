@@ -1,0 +1,17 @@
+Cadiou Antoine 3670631
+Orluc Thomas 3670355
+
+Exercice 1:
+1)	On se rend compte que lors de l'interprétation de lourdes formules avec des <> et [] , Lotrec étend les formules (mminus le <> ou []) au noeud correspondant, ce qui peut vite devenir illisible. 
+
+2)	Nous avons réussi a contruire un modèle de Kripke vérifiant les 2 contraintes avec seulement 2 mondes, un w1 validant notP et Q, lié a un w2 validant P et notQ et bouclant sur lui même. Ainsi, w1 valide les 2 contraintes, la boucle permettant de gérer les <>^n.
+
+3)	Nous avons ajouté le connecteur imp, ainsi que les regles necesssaires (Top_Down, ainsi que les Bottom_up gérant tous les cas possibles), et testé avec des exemples de l'exercice 1. 
+
+Exercice 2:
+
+1)	On constate un clash. Ce qui est logique, si un voisin valide P, tous les voisins ne peuvent pas invalider P.
+
+2)	Valide, Satisfiable et non valide, Valide.
+
+3)	On rentre la formule en mode préfixe "imp nec imp P Q imp nec P nec Q" et on regarde toutes les feuilles de l'arbre construit.

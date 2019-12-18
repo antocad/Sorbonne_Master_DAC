@@ -1,0 +1,29 @@
+ORLUC Thomas 3670355
+CADIOU Antoine 3670631
+
+
+Exercice 1
+
+2) i) Tous les mondes où A sait que B a la carte Verte disparaissent, il n'y a donc plus aucun monde, car dans aucun A sait que B a la verte. 
+
+ii) Tous les mondes où A ne sait pas que B a la Verte disparaisent, mais d'après i), A sait que B a la verte dans aucun monde, donc dans tous les mondes, A ne sait pas que B a la Verte, donc tous les mondes sont gardés. 
+
+3) i) A la fin, il n'y a plus qu'un seul monde, donc chaque joueur peut savoir la carte de tout le monde.
+
+ii) Après la premiere étape, les états 'VRJ' et 'RVJ' sont supprimés, car ce sont ceux où C sait qu'il a la carte jaune.
+Après la seconde étape, les états 'RJV' et 'VJR' sont supprimés, car dedans, B sait qu'il a la jaune, et A le sait aussi, car les états sont rélféxifs, et que A n'a pas d'autres voisins a partir de ces états.
+Après la 3ème étape, C ne confond aucun des deux mondes, et le seul où il sait que B ne possède pas la carte verte est 'JRV', le seul état restant a la fin. 
+Les 3 joueurs connaissent donc les cartes de chacun.
+
+4) Le résultat final dépend bien évidemment de l'ordre des annonces, car une annonce précédente peut supprimer un monde confondu par un autre agent, qui va pouvoir supprimer un monde dans son annonce, ce qui aurait été impossible si la transition était restée. 
+
+
+Exercice 2
+
+2) il faudrait pour albert faire un Ka([15,"May"]) v Ka([16,"May"])....(pour toutes les dates)
+
+3) Après i), on garde seulement juillet et aout, car A sait que B ne sait pas. Donc B n'as pas pu avoir 18 ou 19, et A sait que ce n'est ni Mai, ni Juin.
+Puis si B dit qu'il sait, c'est qu'il n'a pas eu 14, et B conaissant son nombre, B sait la date. 
+Si B dit qu'il sait, cela ne peut etre que le 16 juillet, mois ne contenant plus qu'une seule date. 
+
+4) La première partie de la i) est superflue, A ne peut dans tout les cas rien savoir avec seulement le mois.
