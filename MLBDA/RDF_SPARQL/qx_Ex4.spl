@@ -1,0 +1,32 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX f: <http://www.cems.uwe.ac.uk/empdept/concept/>
+PREFIX : <http://www.abc.org/>
+
+#1
+#SELECT ?e ?j
+#WHERE {?e a f:emp . ?e f:Job ?j}
+#ORDER BY DESC(?e)
+
+#2
+#SELECT ?e
+#WHERE {?e a f:emp . ?e f:Job ?j}
+#ORDER BY ?e
+#LIMIT 3
+
+#3
+#SELECT ?e ?s
+#WHERE {?e a f:emp . ?e f:Job ?j . ?e f:Sal ?s}
+#ORDER BY DESC(?s)
+#LIMIT 3
+
+#4
+#SELECT ?e ?j
+#WHERE {?e a f:emp . ?e f:Job ?j FILTER(?j != "doctor" && ?j != "singer")}
+
+#5
+#SELECT ?e
+#WHERE {?e a f:emp . ?e f:Job ?j FILTER regex(?e, "^l*ry$", "i")}
+
+#6
